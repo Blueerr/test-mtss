@@ -4,16 +4,11 @@
 ////////////////////////////////////////////////////////////////////
 package it.unipd.mtss;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
-/**
- * Unit test for simple App.
- */
-public class IntegerToRomanTest
-        extends TestCase {
-    
+public class IntegerToRomanTest {
+
     @Test
     public void testConvertOneToRoman() {
         int number = 1;
@@ -125,4 +120,5 @@ public class IntegerToRomanTest
         String actualRoman = IntegerToRoman.convert(number);
         assertEquals(expectedRoman, actualRoman);
     }
+
 }
