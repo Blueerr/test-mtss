@@ -4,16 +4,12 @@
 ////////////////////////////////////////////////////////////////////
 package it.unipd.mtss;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
-/**
- * Unit test for simple App.
- */
-public class RomanPrinterTest
-        extends TestCase {
-     @Test
+public class RomanPrinterTest {
+
+    @Test
     public void testPrintI() {
         String expectedOutput = " -----  \n"+
                                 "|_   _| \n"+
@@ -194,4 +190,5 @@ public class RomanPrinterTest
         String output = RomanPrinter.print(900);    
         assertEquals(expectedOutput, output);
     }
+
 }
