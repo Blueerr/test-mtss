@@ -21,7 +21,9 @@ jobs:
       - name: Coveralls GitHub Action        
         uses: coverallsapp/github-action@v2.3.0
 
-      - name: Generate coveralls report
-        run: mvn coveralls:report
+      - name: Coveralls Coverage Report Submission
+        env:
+            COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+        run: mvn -B coveralls:report
        
 
