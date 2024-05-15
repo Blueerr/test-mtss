@@ -18,5 +18,10 @@ jobs:
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots test jacoco:report
 
+      - name: Coveralls GitHub Action        
+        uses: coverallsapp/github-action@v2.3.0
+
       - name: Generate coveralls report
         run: mvn coveralls:report
+       
+
