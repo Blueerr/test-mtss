@@ -116,7 +116,7 @@
         <artifactId>coveralls-maven-plugin</artifactId>
         <version>4.5.0-M2</version>
         <configuration>
-           <repoToken>${env.github_token}</repoToken>
+           <repoToken>${env.github-token}</repoToken>
         </configuration>
         <dependencies>
           <dependency>
