@@ -19,6 +19,9 @@ jobs:
           
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots test jacoco:report coveralls:report --define repoToken=${{ secrets.GITHUB_TOKEN }}
+      - name: Generate checkstyle badge
+        run: mvn post-site
+    
       - name: Generate JaCoCo Badge
         id: jacoco
         uses: cicirello/jacoco-badge-generator@v2
