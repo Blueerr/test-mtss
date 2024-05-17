@@ -112,7 +112,7 @@
 					</goals>
 					<configuration>
 						<skip>${badges.skip}</skip>
-						<outputDir>target/site/jacoco</outputDir>
+						<outputDir>.github/badges</outputDir>
 						<inputFiles>
 							<inputFile>target/checkstyle-result.xml</inputFile>
 						</inputFiles>
