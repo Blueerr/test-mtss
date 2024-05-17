@@ -12,7 +12,6 @@
         <module name="BooleanExpressionComplexity"/>
         <module name="CyclomaticComplexity">
             <property name="max" value="30"/>
-            <property name="tokens" value="LITERAL_WHILE, LITERAL_DO"/>
         </module>
         <module name="MethodLength"/>
         <module name="EmptyCatchBlock"/>
