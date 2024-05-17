@@ -1,4 +1,4 @@
-[![Java CI with Maven](https://github.com/Blueerr/test-mtss/actions/workflows/build.yml/badge.svg)](https://github.com/Blueerr/test-mtss/actions/workflows/build.yml)  
+[![Java CI with Maven](https://github.com/Blueerr/test-mtss/actions/workflows/build.yml/badge.svg)](https://github.com/Blueerr/test-mtss/actions/workflows/build.yml)
 [![checkstyle](https://github.com/Blueerr/test-mtss/actions/workflows/checkstyle.yml/badge.svg)](https://github.com/Blueerr/test-mtss/actions/workflows/checkstyle.yml)  
 JACOCO:  
 ![Coverage](.github/badges/jacoco.svg)
