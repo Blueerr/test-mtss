@@ -17,10 +17,9 @@ jobs:
           distribution: 'temurin'
           java-version: 11.0
 
-      - name: Generate Checkstyle Badge
-        run: mvn post-site
+      
       - name: Build with Maven
-        run: mvn --batch-mode --update-snapshots test jacoco:report coveralls:report --define repoToken=${{ secrets.GITHUB_TOKEN }}
+        run: mvn --batch-mode --update-snapshots post-site test jacoco:report coveralls:report --define repoToken=${{ secrets.GITHUB_TOKEN }}
       
     
       - name: Generate JaCoCo Badge
